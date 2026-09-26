@@ -1,0 +1,9 @@
+# Selalu pakai LF untuk file teks (sesuai Prettier), di OS mana pun.
+* text=auto eol=lf
+
+# File biner jangan diubah.
+*.png binary
+*.ico binary
+*.woff2 binary
+*.sqlite binary
+*.db binary
