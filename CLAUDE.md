@@ -69,6 +69,8 @@ scripts/        # migrate.mjs (Node biasa)
   hanya untuk undo, di-purge saat start.
 - Optimistic update (TanStack Query `onMutate` + rollback) untuk centang dan pengurutan.
 - Migrasi otomatis saat start; salinan `.sqlite` dibuat sebelum ada migrasi tertunda.
+- File migrasi SQL custom: pisahkan statement dengan penanda breakpoint Drizzle, dan **jangan**
+  menulis penanda itu di dalam komentar (migrator tetap memotong di sana).
 
 ## Aturan bahasa (wajib)
 - **Kode dalam bahasa Inggris:** nama folder, file, variabel, konstanta, objek, properti, class,

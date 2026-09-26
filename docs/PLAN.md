@@ -406,7 +406,7 @@ END;
 ## 5. Kanal IPC
 
 Konvensi: semua kanal memakai `ipcMain.handle` dan mengembalikan `Result<T>`. Kode error:
-`VALIDATION`, `NOT_FOUND`, `LIMIT` (kedalaman/ukuran), `CONFLICT`, `IO`, `INTERNAL`.
+`VALIDATION`, `NOT_FOUND`, `LIMIT` (kedalaman/ukuran), `CONFLICT`, `IO`, `FORBIDDEN` (pengirim bukan frame utama aplikasi), `INTERNAL`.
 Pesan error berbahasa Inggris dan siap ditampilkan ke pengguna. Tipe `Id = z.number().int().positive()`,
 `DateKey = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(isValidDateKey)`.
 
@@ -779,7 +779,7 @@ dan semua kriteria selesainya sudah dicek.
     - Renderer-only library (React, font) diletakkan di `devDependencies` karena selalu dibundel. `dependencies`
       hanya untuk modul yang dipakai main saat runtime (saat ini `date-fns`).
 
-- [ ] **Tahap 2: Database, migrasi, dan fondasi IPC**
+- [x] **Tahap 2: Database, migrasi, dan fondasi IPC** — selesai 26 September 2026
   - Tujuan: better-sqlite3 + Drizzle, skema lengkap §4, migrasi custom FTS dan trigger, migrasi otomatis dengan backup
     sebelum migrasi, `handle()` + `Result`, preload dari daftar kanal, `settings:*`, `app:getInfo`, dan helper DB test.
   - File: `drizzle.config.ts`, `drizzle/*`, `src/main/db/*`, `src/main/ipc/{register,settings,app}.ts`,
@@ -788,6 +788,41 @@ dan semua kriteria selesainya sudah dicek.
   - Selesai jika: DB dibuat di userData saat start pertama. Test migrasi di `:memory:` lulus (semua tabel, index, trigger,
     FTS ada). Input tidak valid ke `settings:set` menghasilkan `{ok:false, code:'VALIDATION'}`. Pemanggilan dari
     frame asing ditolak. Membuat migrasi dummy memunculkan file `pre-migrate-*.sqlite`.
+  - Hasil verifikasi: typecheck, lint, dan 51 test lulus (32 test baru). Test DB memakai migrasi asli dari `drizzle/`:
+    - Semua tabel, index, 6 trigger, dan tabel FTS5 terbentuk. Migrasi idempoten dan `foreign_keys` aktif.
+    - Constraint teruji: kedalaman sub list dan folder, CHECK, CASCADE/SET NULL, dan histori tanpa FK.
+    - FTS tetap sinkron saat insert/update/delete, lolos `integrity-check`, dan bisa mencari tanpa diakritik.
+    - Migrasi dummy pada DB file memunculkan `pre-migrate-*.sqlite` berisi data sebelum migrasi.
+    - Migrasi rusak di-rollback dan backup-nya tetap ada. Rotasi hanya menyisakan 5 backup.
+    - Uji `dispatch`: input tidak valid menghasilkan `VALIDATION`. Pengirim dari situs remote, file lain,
+      subframe, atau frame yang sudah hancur menghasilkan `FORBIDDEN`. Error tak terduga menjadi `INTERNAL`
+      tanpa membocorkan detail.
+    - Runtime dev: `tasknote.db` terbentuk di `%APPDATA%\TaskNote (Dev)`. Lewat DevTools, `settings:set` dengan nilai
+      angka, key `backup.dir`, atau properti tambahan ditolak `VALIDATION`, sedangkan set/get yang valid tersimpan.
+    - Build produksi (`electron-vite preview`): DB terbaca dan validasi aktif. Preload hasil build hanya berisi
+      `electron` + daftar kanal (CJS), dan Zod tidak ikut ke bundle renderer. `npm run db:migrate` melaporkan
+      "up to date".
+  - **Penyimpangan dari rencana:**
+    - Kode error baru `FORBIDDEN` untuk pengirim yang bukan frame utama aplikasi (sebelumnya tidak ada di §5).
+    - Logika IPC dipisah: `src/main/ipc/dispatch.ts` (murni, teruji tanpa Electron) dan `register.ts` (pembungkus
+      `ipcMain.handle`). Tambahan `src/main/clock.ts` (`systemClock`, `fixedClock`), `src/main/errors.ts` (`AppError`),
+      dan `src/shared/ipc/schemas.ts` (`idSchema`, `dateKeySchema`).
+    - `window.api.*` mengembalikan `Result` apa adanya. `renderer/src/lib/api.ts` membukanya dan melempar `ApiError`.
+      Kanal dengan output `void` mengembalikan `{ ok: true }` tanpa `data`.
+    - Kanal event main → renderer (`app:systemResumed`, dll.) dan purge saat start (§1.3 langkah 4) belum dibuat.
+      Keduanya dikerjakan di tahap yang membutuhkannya (Tahap 4, 7, 11, 13).
+    - Test DB ada di `src/main/db/__tests__/` (`schema.test.ts`, `migrate.test.ts`, helper `testDb.ts`). Test service
+      dan dispatch diletakkan di samping filenya.
+    - Temuan: penanda breakpoint Drizzle yang ditulis di dalam komentar SQL tetap dipakai sebagai pemisah dan merusak
+      migrasi. Aturan ini dicatat di CLAUDE.md.
+    - npm `allowScripts`: `better-sqlite3` ditolak (skrip `node-gyp rebuild` tidak diperlukan karena memakai prebuild
+      N-API), `esbuild@0.18.20` (dari drizzle-kit) disetujui.
+    - `npm audit`: 4 temuan moderate pada esbuild lama di dalam drizzle-kit (devDependency, hanya untuk membuat file
+      migrasi dan tidak ikut ke aplikasi). Perbaikan otomatis dari npm justru men-downgrade drizzle-kit, jadi tidak
+      diterapkan. Periksa lagi saat drizzle-kit rilis versi baru.
+    - Catatan skema: unique index `(parent_id, position)` tidak menjaga keunikan untuk baris dengan `parent_id NULL`
+      (list utama dan folder akar), karena SQLite menganggap NULL selalu berbeda. Service wajib menjaganya lewat
+      fractional indexing (Tahap 4 dan 10).
 
 - [ ] **Tahap 3: Layout, navigasi, dan infrastruktur UI**
   - Tujuan: AppShell, Sidebar (+ Pengaturan di bawah), TodoTabs, router lengkap (halaman berisi placeholder), pemulihan route
