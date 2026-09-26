@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="970" viewBox="0 0 1320 970" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .win{fill:#fff;stroke:#222;stroke-width:2}
+    .bar{fill:#e6e6e6;stroke:#222}
+    .side{fill:#f0f0f0;stroke:#999}
+    .pane{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .lines{fill:#e2e2e2}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .line{stroke:#ccc}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .big{font-size:26px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .mono{font-family:Consolas, monospace;font-size:12px;fill:#333}
+    .call{fill:#9B111E}
+    .callt{font-size:11px;font-weight:700;fill:#fff}
+    .note{font-size:12px;fill:#444;white-space:pre}
+  </style>
+  <rect class="bg" width="1320" height="970"/>
+  <text class="h1" x="20" y="34">03b · Notes — editor</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · route /notes/edit/45 · dibuka dengan klik petak catatan</text>
+
+  <!-- Window -->
+  <rect class="win" x="20" y="60" width="1280" height="800" rx="8"/>
+  <rect class="bar" x="20" y="60" width="1280" height="32"/>
+  <text class="s" x="36" y="81">TaskNote</text>
+  <text class="s" x="1224" y="81">—   ▢   ✕</text>
+
+  <!-- Sidebar -->
+  <rect class="side" x="20" y="92" width="200" height="768"/>
+  <text class="h2" x="40" y="128">TaskNote</text>
+  <text class="t" x="46" y="173">☑  To-Do List</text>
+  <rect class="dark" x="32" y="192" width="176" height="36" rx="6"/>
+  <text class="b" x="46" y="215">▤  Notes</text>
+  <line class="line" x1="32" y1="812" x2="208" y2="812"/>
+  <text class="t" x="46" y="842">⚙  Settings</text>
+
+  <!-- Top bar -->
+  <rect class="pane" x="240" y="108" width="92" height="30" rx="6"/>
+  <text class="t" x="254" y="128">← Back</text>
+  <text class="t" x="348" y="128" text-decoration="underline">Notes</text>
+  <text class="s" x="402" y="128">›</text>
+  <text class="t" x="414" y="128" text-decoration="underline">Kuliah</text>
+  <text class="s" x="458" y="128">›</text>
+  <text class="t" x="470" y="128" text-decoration="underline">Semester 5</text>
+  <text class="s" x="544" y="128">›</text>
+  <text class="b" x="556" y="128">Rangkuman Normalisasi</text>
+
+  <rect class="pane" x="1022" y="108" width="104" height="30" rx="6"/>
+  <text class="t" x="1034" y="128">📌 Pin</text>
+  <rect class="pane" x="1134" y="108" width="112" height="30" rx="6"/>
+  <text class="t" x="1146" y="128">Move to…</text>
+  <rect class="pane" x="1254" y="108" width="30" height="30" rx="6"/>
+  <text class="b" x="1262" y="127">⋯</text>
+  <line class="line" x1="220" y1="152" x2="1300" y2="152"/>
+
+  <!-- Editor column -->
+  <text class="big" x="380" y="200">Rangkuman Normalisasi</text>
+  <text class="s" x="380" y="224">Created Sep 20, 2026, 9:10 AM   ·   Edited today, 10:42 AM   ·   ✓ Saved</text>
+
+  <rect class="box" x="372" y="240" width="776" height="36" rx="6"/>
+  <text class="b" x="388" y="263">H1</text><text class="b" x="418" y="263">H2</text><text class="b" x="448" y="263">H3</text>
+  <line x1="476" y1="248" x2="476" y2="268" stroke="#aaa"/>
+  <text class="b" x="492" y="263">B</text><text class="t" x="514" y="263" font-style="italic">I</text>
+  <line x1="534" y1="248" x2="534" y2="268" stroke="#aaa"/>
+  <text class="t" x="550" y="263">• Bullet</text><text class="t" x="616" y="263">1. Numbered</text><text class="t" x="704" y="263">☐ Checklist</text>
+  <line x1="786" y1="248" x2="786" y2="268" stroke="#aaa"/>
+  <text class="t" x="800" y="263">&lt;/&gt; Code</text><text class="t" x="872" y="263">❝ Quote</text>
+  <text class="s" x="1136" y="263" text-anchor="end">Ctrl+B · Ctrl+I · Ctrl+Shift+7/8/9</text>
+
+  <text class="h2" x="380" y="316">1NF (Bentuk Normal Pertama)</text>
+  <rect class="lines" x="380" y="330" width="740" height="8" rx="3"/>
+  <rect class="lines" x="380" y="344" width="690" height="8" rx="3"/>
+  <rect class="lines" x="380" y="358" width="420" height="8" rx="3"/>
+  <text class="t" x="386" y="390">•</text><rect class="lines" x="402" y="382" width="420" height="8" rx="3"/>
+  <text class="t" x="386" y="410">•</text><rect class="lines" x="402" y="402" width="360" height="8" rx="3"/>
+
+  <text class="h2" x="380" y="448">2NF</text>
+  <rect class="lines" x="380" y="462" width="720" height="8" rx="3"/>
+  <rect class="lines" x="380" y="476" width="560" height="8" rx="3"/>
+
+  <text class="t" x="380" y="512" style="fill:#888">☑  Baca modul 3</text>
+  <line x1="402" y1="508" x2="476" y2="508" stroke="#888"/>
+  <text class="t" x="380" y="536">☐  Kerjakan latihan normalisasi</text>
+
+  <rect class="box" x="380" y="554" width="740" height="64" rx="6"/>
+  <text class="mono" x="396" y="578">SELECT nim, nama</text>
+  <text class="mono" x="396" y="596">FROM mahasiswa;</text>
+
+  <line x1="382" y1="636" x2="382" y2="676" stroke="#555" stroke-width="3"/>
+  <rect class="lines" x="396" y="644" width="520" height="8" rx="3"/>
+  <rect class="lines" x="396" y="660" width="400" height="8" rx="3"/>
+
+  <text class="s" x="380" y="836">Markdown: “# ” heading · “- ” bullet · “1. ” numbered · “[ ] ” checklist · “```” code · “&gt; ” quote · Esc = back to folder</text>
+
+  <!-- Callouts -->
+  <g><circle class="call" cx="240" cy="110" r="10"/><text class="callt" x="240" y="114" text-anchor="middle">1</text></g>
+  <g><circle class="call" cx="1022" cy="110" r="10"/><text class="callt" x="1022" y="114" text-anchor="middle">2</text></g>
+  <g><circle class="call" cx="366" cy="192" r="10"/><text class="callt" x="366" y="196" text-anchor="middle">3</text></g>
+  <g><circle class="call" cx="366" cy="258" r="10"/><text class="callt" x="366" y="262" text-anchor="middle">4</text></g>
+  <g><circle class="call" cx="366" cy="310" r="10"/><text class="callt" x="366" y="314" text-anchor="middle">5</text></g>
+
+  <!-- Notes -->
+  <text class="h2" x="20" y="892">Catatan</text>
+  <text class="note" x="20" y="916">1  Kembali ke petak folder asal (juga Esc); breadcrumb bisa diklik.     2  Aksi: Pin, Move to… (05-E), menu ⋯ berisi Delete (to Trash).</text>
+  <text class="note" x="20" y="936">3  Judul + waktu dibuat/diubah + status autosave (Saving… / ✓ Saved), tanpa tombol simpan.     4  Toolbar menempel di atas saat menggulir.</text>
+  <text class="note" x="20" y="956">5  Isi rich text, lebar kolom baca maks. ±760px agar nyaman dibaca; shortcut markdown aktif.</text>
+</svg>

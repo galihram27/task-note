@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="990" viewBox="0 0 1320 990" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .win{fill:#fff;stroke:#222;stroke-width:2}
+    .bar{fill:#e6e6e6;stroke:#222}
+    .side{fill:#f0f0f0;stroke:#999}
+    .pane{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .fill{fill:#555;stroke:#555}
+    .line{stroke:#ccc}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .k{font-size:11px;font-weight:700;fill:#222}
+    .call{fill:#9B111E}
+    .callt{font-size:11px;font-weight:700;fill:#fff}
+    .note{font-size:12px;fill:#444;white-space:pre}
+  </style>
+  <rect class="bg" width="1320" height="990"/>
+  <text class="h1" x="20" y="34">04 · Settings</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · route /settings · dibuka dari menu kecil di bawah sidebar</text>
+
+  <!-- Window -->
+  <rect class="win" x="20" y="60" width="1280" height="800" rx="8"/>
+  <rect class="bar" x="20" y="60" width="1280" height="32"/>
+  <text class="s" x="36" y="81">TaskNote</text>
+  <text class="s" x="1224" y="81">—   ▢   ✕</text>
+
+  <!-- Sidebar -->
+  <rect class="side" x="20" y="92" width="200" height="768"/>
+  <text class="h2" x="40" y="128">TaskNote</text>
+  <text class="t" x="46" y="173">☑  To-Do List</text>
+  <text class="t" x="46" y="215">▤  Notes</text>
+  <line class="line" x1="32" y1="812" x2="208" y2="812"/>
+  <rect class="dark" x="32" y="820" width="176" height="32" rx="6"/>
+  <text class="b" x="46" y="842">⚙  Settings</text>
+
+  <text class="h1" x="244" y="134">Settings</text>
+
+  <!-- Backup card -->
+  <rect class="pane" x="240" y="156" width="700" height="380" rx="8"/>
+  <text class="h2" x="260" y="186">Automatic backup</text>
+  <text class="s" x="260" y="206">Daily backup of all data to a folder you choose (e.g. a folder synced to Google Drive).</text>
+  <text class="t" x="812" y="188">On</text>
+  <rect class="fill" x="852" y="172" width="44" height="22" rx="11"/>
+  <circle cx="885" cy="183" r="8" fill="#fff"/>
+
+  <text class="s" x="260" y="238">BACKUP FOLDER</text>
+  <rect class="box" x="260" y="246" width="440" height="32" rx="6"/>
+  <text class="t" x="272" y="267">G:\My Drive\Backup\TaskNote</text>
+  <rect class="pane" x="708" y="246" width="110" height="32" rx="6"/>
+  <text class="t" x="722" y="267">Choose folder…</text>
+  <rect class="pane" x="826" y="246" width="94" height="32" rx="6"/>
+  <text class="t" x="840" y="267">Open folder</text>
+
+  <text class="t" x="260" y="304">●  Last run: today, 8:00 AM — succeeded</text>
+  <rect class="dark" x="260" y="316" width="150" height="30" rx="6"/>
+  <text class="b" x="276" y="336">Back up now</text>
+
+  <text class="s" x="260" y="376">FILE NAME</text><text class="s" x="700" y="376">SIZE</text><text class="s" x="800" y="376">TIME</text>
+  <line class="line" x1="260" y1="384" x2="920" y2="384"/>
+  <text class="t" x="260" y="406">tasknote-2026-09-25-080012.json</text><text class="t" x="700" y="406">412 KB</text><text class="t" x="800" y="406">Sep 25, 8:00 AM</text>
+  <text class="t" x="260" y="430">tasknote-2026-09-24-080344.json</text><text class="t" x="700" y="430">409 KB</text><text class="t" x="800" y="430">Sep 24, 8:03 AM</text>
+  <text class="t" x="260" y="454">tasknote-2026-09-23-094120.json</text><text class="t" x="700" y="454">405 KB</text><text class="t" x="800" y="454">Sep 23, 9:41 AM</text>
+  <text class="s" x="260" y="478">… 11 more files</text>
+  <line class="line" x1="260" y1="492" x2="920" y2="492"/>
+  <text class="s" x="260" y="516">Keeps the 14 most recent files; older ones are deleted automatically. Other files in this folder are never touched.</text>
+
+  <!-- Export/import card -->
+  <rect class="pane" x="240" y="556" width="700" height="150" rx="8"/>
+  <text class="h2" x="260" y="586">Export &amp; import</text>
+  <text class="s" x="260" y="606">Save all data to a single JSON file, or restore from an export or backup file.</text>
+  <rect class="pane" x="260" y="622" width="160" height="32" rx="6"/>
+  <text class="t" x="276" y="643">⤓  Export to JSON…</text>
+  <rect class="pane" x="430" y="622" width="170" height="32" rx="6"/>
+  <text class="t" x="446" y="643">⤒  Import from JSON…</text>
+  <text class="s" x="260" y="684">⚠  Importing replaces all current data. The file is validated and summarized for you to confirm first (see 05-B);</text>
+  <text class="s" x="260" y="700">    a safety backup is created before anything is replaced.</text>
+
+  <!-- About card -->
+  <rect class="pane" x="240" y="726" width="700" height="110" rx="8"/>
+  <text class="h2" x="260" y="756">About</text>
+  <text class="t" x="260" y="780">TaskNote version 1.0.0</text>
+  <text class="s" x="260" y="802">Data location: C:\Users\…\AppData\Roaming\TaskNote\tasknote.db</text>
+  <text class="s" x="260" y="822">Pre-migration backups: …\TaskNote\backups\</text>
+
+  <!-- Shortcut card -->
+  <rect class="pane" x="960" y="156" width="320" height="300" rx="8"/>
+  <text class="h2" x="980" y="186">Keyboard shortcuts</text>
+  <rect class="box" x="980" y="202" width="64" height="22" rx="4"/><text class="k" x="990" y="217">Ctrl+1</text><text class="t" x="1060" y="218">Manage List</text>
+  <rect class="box" x="980" y="232" width="64" height="22" rx="4"/><text class="k" x="990" y="247">Ctrl+2</text><text class="t" x="1060" y="248">List History</text>
+  <rect class="box" x="980" y="262" width="64" height="22" rx="4"/><text class="k" x="990" y="277">Ctrl+3</text><text class="t" x="1060" y="278">Notes</text>
+  <rect class="box" x="980" y="292" width="64" height="22" rx="4"/><text class="k" x="990" y="307">Ctrl+N</text><text class="t" x="1060" y="308">New task / note</text>
+  <rect class="box" x="980" y="322" width="64" height="22" rx="4"/><text class="k" x="990" y="337">Ctrl+F</text><text class="t" x="1060" y="338">Search notes</text>
+  <rect class="box" x="980" y="352" width="64" height="22" rx="4"/><text class="k" x="994" y="367">← / →</text><text class="t" x="1060" y="368">Change day (History)</text>
+  <rect class="box" x="980" y="382" width="64" height="22" rx="4"/><text class="k" x="987" y="397">Alt+↑/↓</text><text class="t" x="1060" y="398">Move task</text>
+  <text class="s" x="980" y="436">Reference only; not customizable in v1.</text>
+
+  <!-- Callouts -->
+  <g><circle class="call" cx="28" cy="822" r="10"/><text class="callt" x="28" y="826" text-anchor="middle">1</text></g>
+  <g><circle class="call" cx="912" cy="172" r="10"/><text class="callt" x="912" y="176" text-anchor="middle">2</text></g>
+  <g><circle class="call" cx="240" cy="246" r="10"/><text class="callt" x="240" y="250" text-anchor="middle">3</text></g>
+  <g><circle class="call" cx="240" cy="300" r="10"/><text class="callt" x="240" y="304" text-anchor="middle">4</text></g>
+  <g><circle class="call" cx="240" cy="400" r="10"/><text class="callt" x="240" y="404" text-anchor="middle">5</text></g>
+  <g><circle class="call" cx="240" cy="624" r="10"/><text class="callt" x="240" y="628" text-anchor="middle">6</text></g>
+  <g><circle class="call" cx="240" cy="776" r="10"/><text class="callt" x="240" y="780" text-anchor="middle">7</text></g>
+  <g><circle class="call" cx="960" cy="158" r="10"/><text class="callt" x="960" y="162" text-anchor="middle">8</text></g>
+
+  <!-- Notes -->
+  <text class="h2" x="20" y="892">Catatan</text>
+  <text class="note" x="20" y="916">1  Menu “Settings” kecil di bagian bawah sidebar.     2  Toggle backup otomatis (maks. sekali per hari; dicek saat start, tiap 60 menit, dan saat resume).</text>
+  <text class="note" x="20" y="936">3  Pilih folder via dialog sistem (dibuka dari main process); “Open folder” membuka Explorer.     4  Status backup terakhir + tombol backup manual; error ditampilkan di sini.</text>
+  <text class="note" x="20" y="956">5  Daftar file backup; rotasi 14 file terakhir.     6  Ekspor/impor JSON dengan validasi + konfirmasi.     7  Versi dan lokasi file data.</text>
+  <text class="note" x="20" y="976">8  (Opsional, tambahan) Kartu referensi shortcut keyboard.</text>
+</svg>

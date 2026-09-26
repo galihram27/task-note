@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1030" viewBox="0 0 1320 1030" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .win{fill:#fff;stroke:#222;stroke-width:2}
+    .bar{fill:#e6e6e6;stroke:#222}
+    .side{fill:#f0f0f0;stroke:#999}
+    .pane{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .fill{fill:#555;stroke:#555}
+    .line{stroke:#ccc}
+    .dash{fill:none;stroke:#888;stroke-dasharray:5 4}
+    .focus{fill:none;stroke:#222;stroke-width:2.5;stroke-dasharray:6 3}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .w{font-size:13px;fill:#fff}
+    .call{fill:#9B111E}
+    .callt{font-size:11px;font-weight:700;fill:#fff}
+    .note{font-size:12px;fill:#444;white-space:pre}
+    .strike{stroke:#777;stroke-width:1}
+  </style>
+  <rect class="bg" width="1320" height="1030"/>
+  <text class="h1" x="20" y="34">01 · To-Do List › Manage List</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · jendela 1280×800 · grayscale (warna final: tema gelap, lihat CLAUDE.md)</text>
+
+  <!-- Window -->
+  <rect class="win" x="20" y="60" width="1280" height="800" rx="8"/>
+  <rect class="bar" x="20" y="60" width="1280" height="32"/>
+  <text class="s" x="36" y="81">TaskNote</text>
+  <text class="s" x="1224" y="81">—   ▢   ✕</text>
+
+  <!-- Sidebar -->
+  <rect class="side" x="20" y="92" width="200" height="768"/>
+  <text class="h2" x="40" y="128">TaskNote</text>
+  <rect class="dark" x="32" y="150" width="176" height="36" rx="6"/>
+  <text class="b" x="46" y="173">☑  To-Do List</text>
+  <text class="t" x="46" y="215">▤  Notes</text>
+  <line class="line" x1="32" y1="812" x2="208" y2="812"/>
+  <text class="t" x="46" y="842">⚙  Settings</text>
+
+  <!-- Tabs -->
+  <text class="b" x="244" y="122">Manage List</text>
+  <rect x="240" y="131" width="84" height="3" fill="#222"/>
+  <text class="t" x="352" y="122">List History</text>
+  <line class="line" x1="220" y1="136" x2="1300" y2="136"/>
+
+  <!-- New day banner -->
+  <rect class="dash" x="240" y="148" width="1040" height="40" rx="6"/>
+  <text class="t" x="256" y="173">⚠  Some items are still checked from Thursday, September 24. Reset the checklist now?</text>
+  <rect class="dark" x="1110" y="156" width="70" height="24" rx="4"/>
+  <text class="b" x="1126" y="173">Reset</text>
+  <rect class="pane" x="1190" y="156" width="76" height="24" rx="4"/>
+  <text class="t" x="1210" y="173">Later</text>
+
+  <!-- Header -->
+  <text class="s" x="240" y="208">TODAY</text>
+  <text class="h1" x="240" y="232">Friday, September 25, 2026</text>
+  <rect class="pane" x="1140" y="206" width="140" height="30" rx="6"/>
+  <text class="t" x="1156" y="226">↺  Reset checks</text>
+
+  <!-- Segmented progress bar -->
+  <rect class="box" x="240" y="248" width="100" height="18" rx="3"/>
+  <rect class="fill" x="240" y="248" width="100" height="18" rx="3"/>
+  <rect class="box" x="344" y="248" width="390" height="18" rx="3"/>
+  <rect class="fill" x="344" y="248" width="146" height="18" rx="3"/>
+  <rect class="box" x="738" y="248" width="150" height="18" rx="3"/>
+  <rect class="box" x="892" y="248" width="50" height="18" rx="3"/>
+  <rect class="box" x="946" y="248" width="290" height="18" rx="3"/>
+  <rect class="fill" x="946" y="248" width="145" height="18" rx="3"/>
+  <rect class="box" x="1240" y="248" width="40" height="18" rx="3"/>
+
+  <text class="t" x="240" y="292">Done <tspan font-weight="700">4 of 11</tspan> items   ·   Remaining estimate <tspan font-weight="700">3h 45m</tspan>   ·   Logged <tspan font-weight="700">2h 40m</tspan> of 5h 15m estimated</text>
+  <line class="line" x1="240" y1="306" x2="1280" y2="306"/>
+
+  <!-- Add task form -->
+  <rect class="pane" x="240" y="320" width="340" height="36" rx="6"/>
+  <text class="s" x="254" y="343">Add a task…</text>
+  <rect class="pane" x="588" y="320" width="112" height="36" rx="6"/>
+  <text class="s" x="600" y="343">Estimate (1h 30m)</text>
+  <text class="t" x="710" y="343">☐ Today only</text>
+  <rect class="dark" x="820" y="320" width="80" height="36" rx="6"/>
+  <text class="b" x="834" y="343">+ Add</text>
+
+  <!-- Row 1: checked -->
+  <rect class="pane" x="240" y="372" width="660" height="40" rx="6"/>
+  <text class="s" x="252" y="397">⋮⋮</text>
+  <rect class="fill" x="276" y="384" width="16" height="16" rx="3"/>
+  <text class="w" x="279" y="397" font-size="12">✓</text>
+  <text class="t" x="304" y="397" style="fill:#888">Olahraga pagi</text>
+  <line class="strike" x1="304" y1="393" x2="394" y2="393"/>
+  <rect class="box" x="800" y="382" width="54" height="20" rx="10"/>
+  <text class="s" x="817" y="396">30m</text>
+  <text class="b" x="872" y="397">⋯</text>
+
+  <!-- Row 2: partial parent with subs -->
+  <rect class="pane" x="240" y="420" width="660" height="156" rx="6"/>
+  <text class="s" x="252" y="445">⋮⋮</text>
+  <rect class="box" x="276" y="432" width="16" height="16" rx="3"/>
+  <rect class="fill" x="280" y="439" width="8" height="2"/>
+  <text class="t" x="300" y="445">▾</text>
+  <text class="b" x="316" y="445">Belajar TypeScript</text>
+  <text class="s" x="452" y="445">1/2 subtasks</text>
+  <rect class="box" x="800" y="430" width="54" height="20" rx="10"/>
+  <text class="s" x="821" y="444">2h</text>
+  <text class="b" x="872" y="445">⋯</text>
+  <!-- sub 1 -->
+  <line class="line" x1="276" y1="460" x2="900" y2="460"/>
+  <text class="s" x="290" y="486">⋮⋮</text>
+  <rect class="fill" x="312" y="473" width="16" height="16" rx="3"/>
+  <text class="w" x="315" y="486" font-size="12">✓</text>
+  <text class="t" x="340" y="486" style="fill:#888">Baca dokumentasi</text>
+  <line class="strike" x1="340" y1="482" x2="452" y2="482"/>
+  <rect class="box" x="800" y="472" width="54" height="20" rx="10"/>
+  <text class="s" x="817" y="486">45m</text>
+  <text class="b" x="872" y="486">⋯</text>
+  <!-- sub 2 -->
+  <text class="s" x="290" y="522">⋮⋮</text>
+  <rect class="pane" x="312" y="509" width="16" height="16" rx="3"/>
+  <text class="t" x="340" y="522">Latihan soal</text>
+  <rect class="box" x="800" y="508" width="54" height="20" rx="10"/>
+  <text class="s" x="808" y="522">1h 15m</text>
+  <text class="b" x="872" y="522">⋯</text>
+  <!-- add sub -->
+  <rect class="dash" x="312" y="538" width="572" height="28" rx="4"/>
+  <text class="s" x="324" y="556">+ Add subtask</text>
+
+  <!-- Row 3: keyboard focus -->
+  <rect class="pane" x="240" y="584" width="660" height="40" rx="6"/>
+  <rect class="focus" x="236" y="580" width="668" height="48" rx="8"/>
+  <text class="s" x="252" y="609">⋮⋮</text>
+  <rect class="pane" x="276" y="596" width="16" height="16" rx="3"/>
+  <text class="t" x="304" y="609">Membaca buku</text>
+  <rect class="box" x="800" y="594" width="54" height="20" rx="10"/>
+  <text class="s" x="817" y="608">45m</text>
+  <text class="b" x="872" y="609">⋯</text>
+
+  <!-- Row 4: only today -->
+  <rect class="pane" x="240" y="632" width="660" height="40" rx="6"/>
+  <text class="s" x="252" y="657">⋮⋮</text>
+  <rect class="pane" x="276" y="644" width="16" height="16" rx="3"/>
+  <text class="t" x="304" y="657">Beli obat</text>
+  <rect class="dark" x="372" y="645" width="62" height="18" rx="9"/>
+  <text class="s" x="381" y="658" style="fill:#333">Today</text>
+  <rect class="box" x="800" y="642" width="54" height="20" rx="10"/>
+  <text class="s" x="817" y="656">15m</text>
+  <text class="b" x="872" y="657">⋯</text>
+
+  <!-- Row 5: collapsed partial -->
+  <rect class="pane" x="240" y="680" width="660" height="40" rx="6"/>
+  <text class="s" x="252" y="705">⋮⋮</text>
+  <rect class="box" x="276" y="692" width="16" height="16" rx="3"/>
+  <rect class="fill" x="280" y="699" width="8" height="2"/>
+  <text class="t" x="300" y="705">▸</text>
+  <text class="b" x="316" y="705">Proyek TaskNote</text>
+  <text class="s" x="476" y="705">2/4 subtasks</text>
+  <rect class="box" x="800" y="690" width="54" height="20" rx="10"/>
+  <text class="s" x="808" y="704">1h 30m</text>
+  <text class="b" x="872" y="705">⋯</text>
+
+  <!-- Row 6: no estimate -->
+  <rect class="pane" x="240" y="728" width="660" height="40" rx="6"/>
+  <text class="s" x="252" y="753">⋮⋮</text>
+  <rect class="pane" x="276" y="740" width="16" height="16" rx="3"/>
+  <text class="t" x="304" y="753">Meditasi</text>
+  <text class="s" x="770" y="753">no estimate</text>
+  <text class="b" x="872" y="753">⋯</text>
+
+  <!-- Time panel -->
+  <rect class="pane" x="920" y="320" width="360" height="460" rx="8"/>
+  <text class="h2" x="936" y="346">Time today</text>
+  <rect class="pane" x="936" y="360" width="70" height="32" rx="6"/>
+  <text class="s" x="948" y="380">Hours</text>
+  <rect class="pane" x="1014" y="360" width="70" height="32" rx="6"/>
+  <text class="s" x="1026" y="380">Minutes</text>
+  <rect class="pane" x="1092" y="360" width="172" height="32" rx="6"/>
+  <text class="s" x="1104" y="380">Task (optional)          ▾</text>
+  <rect class="pane" x="936" y="400" width="328" height="32" rx="6"/>
+  <text class="s" x="948" y="420">Note, e.g. studying</text>
+  <rect class="dark" x="936" y="440" width="328" height="32" rx="6"/>
+  <text class="b" x="1070" y="461">Log time</text>
+
+  <text class="s" x="936" y="500">TOTAL TODAY</text>
+  <text class="h1" x="936" y="528">2h 40m</text>
+  <text class="s" x="1012" y="527">of 5h 15m estimated (51%)</text>
+  <rect class="box" x="936" y="540" width="328" height="8" rx="4"/>
+  <rect class="fill" x="936" y="540" width="167" height="8" rx="4"/>
+  <line class="line" x1="936" y1="566" x2="1264" y2="566"/>
+
+  <text class="b" x="936" y="592">1h 30m</text>
+  <text class="s" x="936" y="610">Belajar TypeScript</text>
+  <text class="s" x="1180" y="592">9:15 AM</text>
+  <text class="t" x="1248" y="592">✕</text>
+  <line class="line" x1="936" y1="624" x2="1264" y2="624"/>
+  <text class="b" x="936" y="650">1h 10m</text>
+  <text class="s" x="936" y="668">Ngoding proyek catatan</text>
+  <text class="s" x="1180" y="650">1:40 PM</text>
+  <text class="t" x="1248" y="650">✕</text>
+
+  <!-- Toast -->
+  <rect x="560" y="796" width="400" height="44" rx="8" fill="#333"/>
+  <text class="w" x="578" y="823">Task “Jalan sore” deleted</text>
+  <text class="w" x="870" y="823" font-weight="700" text-decoration="underline">Undo</text>
+
+  <!-- Callouts -->
+  <g><circle class="call" cx="236" cy="150" r="10"/><text class="callt" x="236" y="154" text-anchor="middle">1</text></g>
+  <g><circle class="call" cx="236" cy="250" r="10"/><text class="callt" x="236" y="254" text-anchor="middle">2</text></g>
+  <g><circle class="call" cx="228" cy="276" r="10"/><text class="callt" x="228" y="280" text-anchor="middle">3</text></g>
+  <g><circle class="call" cx="1140" cy="206" r="10"/><text class="callt" x="1140" y="210" text-anchor="middle">4</text></g>
+  <g><circle class="call" cx="236" cy="322" r="10"/><text class="callt" x="236" y="326" text-anchor="middle">5</text></g>
+  <g><circle class="call" cx="272" cy="430" r="10"/><text class="callt" x="272" y="434" text-anchor="middle">6</text></g>
+  <g><circle class="call" cx="228" cy="604" r="10"/><text class="callt" x="228" y="608" text-anchor="middle">7</text></g>
+  <g><circle class="call" cx="442" cy="646" r="10"/><text class="callt" x="442" y="650" text-anchor="middle">8</text></g>
+  <g><circle class="call" cx="920" cy="322" r="10"/><text class="callt" x="920" y="326" text-anchor="middle">9</text></g>
+  <g><circle class="call" cx="560" cy="798" r="10"/><text class="callt" x="560" y="802" text-anchor="middle">10</text></g>
+
+  <!-- Notes -->
+  <text class="h2" x="20" y="892">Catatan</text>
+  <text class="note" x="20" y="916">1  Banner hari baru: muncul jika masih ada centang dari hari sebelumnya. Tidak reset otomatis; “Later” = sembunyikan sampai besok.</text>
+  <text class="note" x="20" y="936">2  Bilah progres bersegmen: 1 segmen per list utama, lebar ∝ estimasi. Terisi penuh = selesai, terisi sebagian = sebagian sub list.</text>
+  <text class="note" x="20" y="956">3  Ringkasan: item selesai, sisa estimasi, waktu tercatat vs total estimasi.       4  Reset checks → toast “Undo”. Histori tidak tersentuh.</text>
+  <text class="note" x="20" y="976">5  Form tambah (Ctrl+N): estimasi format bebas (45m, 1h 30m, 1:30, 2 hours). “Today only” = item sekali pakai.   6  Induk “–” = sebagian sub tercentang.</text>
+  <text class="note" x="20" y="996">7  Urutan: drag ⋮⋮ dengan mouse, atau keyboard (Spasi ambil · ↑/↓ · Spasi lepas; Alt+↑/↓). Ring fokus selalu terlihat.   8  Badge item sekali pakai.</text>
+  <text class="note" x="20" y="1016">9  Panel waktu: jam + menit + keterangan + list opsional; ✕ hapus dengan undo.   10  Toast “Undo” untuk hapus list, sub list, dan catatan waktu (10 detik).</text>
+</svg>

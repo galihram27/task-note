@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1010" viewBox="0 0 1320 1010" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .win{fill:#fff;stroke:#222;stroke-width:2}
+    .bar{fill:#e6e6e6;stroke:#222}
+    .side{fill:#f0f0f0;stroke:#999}
+    .pane{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .fill{fill:#555;stroke:#555}
+    .line{stroke:#ccc}
+    .dash{fill:none;stroke:#888;stroke-dasharray:5 4}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .w{font-size:13px;fill:#fff}
+    .d{font-size:13px;fill:#333;text-anchor:middle}
+    .dis{font-size:13px;fill:#c4c4c4;text-anchor:middle}
+    .c{text-anchor:middle}
+    .dot{fill:#555}
+    .call{fill:#9B111E}
+    .callt{font-size:11px;font-weight:700;fill:#fff}
+    .note{font-size:12px;fill:#444;white-space:pre}
+  </style>
+  <rect class="bg" width="1320" height="1010"/>
+  <text class="h1" x="20" y="34">02 · To-Do List › List History</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · route /todo/history/2026-09-24 · hanya baca</text>
+
+  <!-- Window -->
+  <rect class="win" x="20" y="60" width="1280" height="800" rx="8"/>
+  <rect class="bar" x="20" y="60" width="1280" height="32"/>
+  <text class="s" x="36" y="81">TaskNote</text>
+  <text class="s" x="1224" y="81">—   ▢   ✕</text>
+
+  <!-- Sidebar -->
+  <rect class="side" x="20" y="92" width="200" height="768"/>
+  <text class="h2" x="40" y="128">TaskNote</text>
+  <rect class="dark" x="32" y="150" width="176" height="36" rx="6"/>
+  <text class="b" x="46" y="173">☑  To-Do List</text>
+  <text class="t" x="46" y="215">▤  Notes</text>
+  <line class="line" x1="32" y1="812" x2="208" y2="812"/>
+  <text class="t" x="46" y="842">⚙  Settings</text>
+
+  <!-- Tabs -->
+  <text class="t" x="244" y="122">Manage List</text>
+  <text class="b" x="352" y="122">List History</text>
+  <rect x="348" y="131" width="86" height="3" fill="#222"/>
+  <line class="line" x1="220" y1="136" x2="1300" y2="136"/>
+
+  <!-- Calendar -->
+  <rect class="pane" x="240" y="150" width="380" height="330" rx="8"/>
+  <text class="h2" x="258" y="182">‹</text>
+  <text class="h2 c" x="431" y="182">September 2026</text>
+  <text class="h2" x="596" y="182" style="fill:#c4c4c4">›</text>
+  <text class="s c" x="281" y="214">Mon</text><text class="s c" x="331" y="214">Tue</text><text class="s c" x="381" y="214">Wed</text><text class="s c" x="431" y="214">Thu</text><text class="s c" x="481" y="214">Fri</text><text class="s c" x="531" y="214">Sat</text><text class="s c" x="581" y="214">Sun</text>
+  <!-- selected + today markers -->
+  <circle class="fill" cx="431" cy="371" r="17"/>
+  <circle cx="481" cy="371" r="17" fill="none" stroke="#222" stroke-width="1.5"/>
+  <!-- row 0 -->
+  <text class="dis" x="281" y="250">31</text><text class="d" x="331" y="250">1</text><text class="d" x="381" y="250">2</text><text class="d" x="431" y="250">3</text><text class="d" x="481" y="250">4</text><text class="d" x="531" y="250">5</text><text class="d" x="581" y="250">6</text>
+  <!-- row 1 -->
+  <text class="d" x="281" y="292">7</text><text class="d" x="331" y="292">8</text><text class="d" x="381" y="292">9</text><text class="d" x="431" y="292">10</text><text class="d" x="481" y="292">11</text><text class="d" x="531" y="292">12</text><text class="d" x="581" y="292">13</text>
+  <!-- row 2 -->
+  <text class="d" x="281" y="334">14</text><text class="d" x="331" y="334">15</text><text class="d" x="381" y="334">16</text><text class="d" x="431" y="334">17</text><text class="d" x="481" y="334">18</text><text class="d" x="531" y="334">19</text><text class="d" x="581" y="334">20</text>
+  <!-- row 3 -->
+  <text class="d" x="281" y="376">21</text><text class="d" x="331" y="376">22</text><text class="d" x="381" y="376">23</text><text class="d" x="431" y="376" style="fill:#fff" font-weight="700">24</text><text class="d" x="481" y="376" font-weight="700">25</text><text class="dis" x="531" y="376">26</text><text class="dis" x="581" y="376">27</text>
+  <!-- row 4 -->
+  <text class="dis" x="281" y="418">28</text><text class="dis" x="331" y="418">29</text><text class="dis" x="381" y="418">30</text><text class="dis" x="431" y="418">1</text><text class="dis" x="481" y="418">2</text><text class="dis" x="531" y="418">3</text><text class="dis" x="581" y="418">4</text>
+  <!-- data dots -->
+  <circle class="dot" cx="381" cy="259" r="2"/><circle class="dot" cx="431" cy="259" r="2"/>
+  <circle class="dot" cx="281" cy="301" r="2"/><circle class="dot" cx="331" cy="301" r="2"/><circle class="dot" cx="381" cy="301" r="2"/><circle class="dot" cx="431" cy="301" r="2"/>
+  <circle class="dot" cx="281" cy="343" r="2"/><circle class="dot" cx="331" cy="343" r="2"/><circle class="dot" cx="381" cy="343" r="2"/><circle class="dot" cx="431" cy="343" r="2"/><circle class="dot" cx="481" cy="343" r="2"/>
+  <circle class="dot" cx="281" cy="385" r="2"/><circle class="dot" cx="331" cy="385" r="2"/><circle class="dot" cx="381" cy="385" r="2"/><circle cx="431" cy="383" r="2" fill="#fff"/><circle class="dot" cx="481" cy="385" r="2"/>
+  <line class="line" x1="256" y1="440" x2="604" y2="440"/>
+  <circle class="dot" cx="262" cy="460" r="2"/><text class="s" x="270" y="464">has data</text>
+  <circle cx="330" cy="460" r="7" fill="none" stroke="#222"/><text class="s" x="342" y="464">today</text>
+  <circle class="fill" cx="404" cy="460" r="7"/><text class="s" x="416" y="464">selected</text>
+  <text class="s" x="470" y="464" style="fill:#c4c4c4">26</text><text class="s" x="488" y="464">future (disabled)</text>
+
+  <!-- Day nav -->
+  <rect class="pane" x="240" y="494" width="150" height="32" rx="6"/>
+  <text class="t" x="256" y="515">‹ Previous day</text>
+  <rect class="dark" x="398" y="494" width="76" height="32" rx="6"/>
+  <text class="b" x="418" y="515">Today</text>
+  <rect class="pane" x="482" y="494" width="138" height="32" rx="6"/>
+  <text class="t" x="494" y="515">Next day ›</text>
+
+  <!-- Week chart -->
+  <rect class="pane" x="240" y="542" width="380" height="290" rx="8"/>
+  <text class="h2" x="256" y="568">Last 7 days</text>
+  <text class="s" x="256" y="586">Total time logged per day · click a bar to select</text>
+  <line x1="256" y1="780" x2="604" y2="780" stroke="#999"/>
+  <rect class="dark" x="267" y="778" width="28" height="2"/>
+  <rect class="dark" x="317" y="765" width="28" height="15"/>
+  <rect class="dark" x="367" y="660" width="28" height="120"/>
+  <rect class="dark" x="417" y="690" width="28" height="90"/>
+  <rect class="dark" x="467" y="630" width="28" height="150"/>
+  <rect class="fill" x="517" y="680" width="28" height="100"/>
+  <rect class="dark" x="567" y="700" width="28" height="80"/>
+  <text class="s c" x="281" y="772">0m</text><text class="s c" x="331" y="759">30m</text><text class="s c" x="381" y="654">4h</text><text class="s c" x="431" y="684">3h</text><text class="s c" x="481" y="624">5h</text><text class="s c" x="531" y="674" font-weight="700" style="fill:#222">3h 20m</text><text class="s c" x="581" y="694">2h 40m</text>
+  <text class="s c" x="281" y="798">Sat</text><text class="s c" x="331" y="798">Sun</text><text class="s c" x="381" y="798">Mon</text><text class="s c" x="431" y="798">Tue</text><text class="s c" x="481" y="798">Wed</text><text class="s c" x="531" y="798" font-weight="700" style="fill:#222">Thu</text><text class="s c" x="581" y="798">Fri</text>
+  <text class="s c" x="281" y="814">19</text><text class="s c" x="331" y="814">20</text><text class="s c" x="381" y="814">21</text><text class="s c" x="431" y="814">22</text><text class="s c" x="481" y="814">23</text><text class="s c" x="531" y="814" font-weight="700" style="fill:#222">24</text><text class="s c" x="581" y="814">25</text>
+
+  <!-- Right column: day detail -->
+  <line class="line" x1="632" y1="150" x2="632" y2="840"/>
+  <text class="h1" x="656" y="178">Thursday, September 24, 2026</text>
+  <rect class="dark" x="966" y="162" width="78" height="22" rx="11"/>
+  <text class="s" x="980" y="177" style="fill:#222">Yesterday</text>
+
+  <rect class="box" x="656" y="196" width="200" height="64" rx="8"/>
+  <text class="h1" x="672" y="230">7</text>
+  <text class="s" x="672" y="248">items done</text>
+  <rect class="box" x="868" y="196" width="200" height="64" rx="8"/>
+  <text class="h1" x="884" y="230">3h 20m</text>
+  <text class="s" x="884" y="248">time logged</text>
+
+  <text class="h2" x="656" y="294">Completed activities</text>
+  <!-- group 1 full -->
+  <rect class="pane" x="656" y="306" width="608" height="36" rx="6"/>
+  <rect class="fill" x="670" y="316" width="16" height="16" rx="3"/><text class="w" x="673" y="329" font-size="12">✓</text>
+  <text class="b" x="698" y="329">Olahraga pagi</text>
+  <text class="s" x="1196" y="329">6:30 AM</text>
+  <!-- group 2 full with subs -->
+  <rect class="pane" x="656" y="350" width="608" height="100" rx="6"/>
+  <rect class="fill" x="670" y="360" width="16" height="16" rx="3"/><text class="w" x="673" y="373" font-size="12">✓</text>
+  <text class="b" x="698" y="373">Belajar TypeScript</text>
+  <text class="s" x="1196" y="373">10:05 AM</text>
+  <text class="t" x="716" y="404">✓  Baca dokumentasi</text><text class="s" x="1196" y="404">8:10 AM</text>
+  <text class="t" x="716" y="432">✓  Latihan soal</text><text class="s" x="1196" y="432">10:05 AM</text>
+  <!-- group 3 partial -->
+  <rect class="dash" x="656" y="460" width="608" height="100" rx="6"/>
+  <rect class="box" x="670" y="470" width="16" height="16" rx="3"/><rect class="fill" x="674" y="477" width="8" height="2"/>
+  <text class="b" x="698" y="483">Proyek TaskNote</text>
+  <rect class="box" x="862" y="470" width="122" height="20" rx="10"/>
+  <text class="s" x="872" y="484">Partial · 2 of 4</text>
+  <text class="t" x="716" y="514">✓  Desain skema</text><text class="s" x="1196" y="514">2:20 PM</text>
+  <text class="t" x="716" y="542">✓  Wireframe</text><text class="s" x="1196" y="542">4:00 PM</text>
+  <!-- group 4 full -->
+  <rect class="pane" x="656" y="570" width="608" height="36" rx="6"/>
+  <rect class="fill" x="670" y="580" width="16" height="16" rx="3"/><text class="w" x="673" y="593" font-size="12">✓</text>
+  <text class="b" x="698" y="593">Membaca buku</text>
+  <text class="s" x="1196" y="593">9:15 PM</text>
+
+  <text class="h2" x="656" y="640">Time log</text>
+  <text class="s" x="656" y="664">DURATION</text><text class="s" x="760" y="664">NOTE / TASK</text><text class="s" x="1170" y="664">LOGGED AT</text>
+  <line class="line" x1="656" y1="672" x2="1264" y2="672"/>
+  <text class="b" x="656" y="696">2h 00m</text><text class="t" x="760" y="696">Belajar TypeScript</text><text class="t" x="1170" y="696">10:10 AM</text>
+  <line class="line" x1="656" y1="710" x2="1264" y2="710"/>
+  <text class="b" x="656" y="734">1h 20m</text><text class="t" x="760" y="734">Ngoding proyek catatan</text><text class="t" x="1170" y="734">4:45 PM</text>
+  <line class="line" x1="656" y1="748" x2="1264" y2="748"/>
+
+  <text class="s" x="656" y="830">Tip: press ← / → to go to the previous / next day</text>
+
+  <!-- Callouts -->
+  <g><circle class="call" cx="440" cy="118" r="10"/><text class="callt" x="440" y="122" text-anchor="middle">1</text></g>
+  <g><circle class="call" cx="240" cy="152" r="10"/><text class="callt" x="240" y="156" text-anchor="middle">2</text></g>
+  <g><circle class="call" cx="240" cy="496" r="10"/><text class="callt" x="240" y="500" text-anchor="middle">3</text></g>
+  <g><circle class="call" cx="240" cy="544" r="10"/><text class="callt" x="240" y="548" text-anchor="middle">4</text></g>
+  <g><circle class="call" cx="646" cy="150" r="10"/><text class="callt" x="646" y="154" text-anchor="middle">5</text></g>
+  <g><circle class="call" cx="1078" cy="228" r="10"/><text class="callt" x="1078" y="232" text-anchor="middle">6</text></g>
+  <g><circle class="call" cx="1274" cy="352" r="10"/><text class="callt" x="1274" y="356" text-anchor="middle">7</text></g>
+  <g><circle class="call" cx="1274" cy="462" r="10"/><text class="callt" x="1274" y="466" text-anchor="middle">8</text></g>
+  <g><circle class="call" cx="646" cy="616" r="10"/><text class="callt" x="646" y="620" text-anchor="middle">9</text></g>
+
+  <!-- Notes -->
+  <text class="h2" x="20" y="892">Catatan</text>
+  <text class="note" x="20" y="916">1  Tab sub halaman aktif (Ctrl+2). Tanggal terpilih tercermin di URL /todo/history/:date.</text>
+  <text class="note" x="20" y="936">2  Kalender: nama hari/bulan bahasa Inggris (en-US), minggu mulai Senin, titik = ada item dicentang atau waktu tercatat, tanggal masa depan nonaktif.</text>
+  <text class="note" x="20" y="956">3  Navigasi cepat; “Next day” nonaktif saat hari ini. Keyboard ← / →.     4  Rekap 7 hari: batang = total waktu tercatat; klik batang = pilih tanggal.</text>
+  <text class="note" x="20" y="976">5  Judul tanggal lengkap + label “Today” / “Yesterday”.     6  Ringkasan: item diselesaikan + total waktu tercatat.     7  Grup penuh: list utama selesai beserta sub list.</text>
+  <text class="note" x="20" y="996">8  Grup sebagian: garis putus-putus + “Partial · 2 of 4”.     9  Catatan waktu: durasi, keterangan/list, jam dicatat. Semua konten dari snapshot (tetap utuh walau list diedit/dihapus).</text>
+</svg>

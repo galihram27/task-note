@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1010" viewBox="0 0 1320 1010" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .win{fill:#fff;stroke:#222;stroke-width:2}
+    .bar{fill:#e6e6e6;stroke:#222}
+    .side{fill:#f0f0f0;stroke:#999}
+    .pane{fill:#fff;stroke:#999}
+    .tile{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .lines{fill:#e2e2e2}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .folder{fill:#d6d6d6;stroke:#777}
+    .line{stroke:#ccc}
+    .dash{fill:none;stroke:#888;stroke-dasharray:5 4}
+    .drop{fill:#f0f0f0;stroke:#222;stroke-width:2.5;stroke-dasharray:7 4}
+    .focus{fill:none;stroke:#222;stroke-width:2.5;stroke-dasharray:6 3}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .e{text-anchor:end}
+    .c{text-anchor:middle}
+    .call{fill:#9B111E}
+    .callt{font-size:11px;font-weight:700;fill:#fff}
+    .note{font-size:12px;fill:#444;white-space:pre}
+  </style>
+  <rect class="bg" width="1320" height="1010"/>
+  <text class="h1" x="20" y="34">03a · Notes — tampilan petak</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · route /notes/folder/12 · petak folder + petak catatan dari folder yang sedang dibuka</text>
+
+  <!-- Window -->
+  <rect class="win" x="20" y="60" width="1280" height="800" rx="8"/>
+  <rect class="bar" x="20" y="60" width="1280" height="32"/>
+  <text class="s" x="36" y="81">TaskNote</text>
+  <text class="s" x="1224" y="81">—   ▢   ✕</text>
+
+  <!-- Sidebar -->
+  <rect class="side" x="20" y="92" width="200" height="768"/>
+  <text class="h2" x="40" y="128">TaskNote</text>
+  <text class="t" x="46" y="173">☑  To-Do List</text>
+  <rect class="dark" x="32" y="192" width="176" height="36" rx="6"/>
+  <text class="b" x="46" y="215">▤  Notes</text>
+  <line class="line" x1="32" y1="812" x2="208" y2="812"/>
+  <text class="t" x="46" y="842">⚙  Settings</text>
+
+  <!-- Header -->
+  <text class="h1" x="240" y="132">Notes</text>
+  <rect class="pane" x="820" y="110" width="260" height="32" rx="6"/>
+  <text class="s" x="832" y="131">⌕  Search this folder…</text>
+  <text class="s e" x="1070" y="131">Ctrl+F</text>
+  <rect class="pane" x="1090" y="110" width="86" height="32" rx="6"/>
+  <text class="t" x="1104" y="131">+ Folder</text>
+  <rect class="dark" x="1184" y="110" width="96" height="32" rx="6"/>
+  <text class="b" x="1196" y="131">+ Note</text>
+
+  <!-- View switch -->
+  <rect class="dark" x="240" y="156" width="130" height="28" rx="14"/>
+  <text class="b" x="256" y="175">▦ Browse folders</text>
+  <rect class="pane" x="378" y="156" width="120" height="28" rx="14"/>
+  <text class="t" x="400" y="175">All notes</text>
+  <rect class="pane" x="506" y="156" width="110" height="28" rx="14"/>
+  <text class="t" x="522" y="175">⌧ Trash</text><text class="s" x="598" y="175">2</text>
+  <line class="line" x1="240" y1="196" x2="1280" y2="196"/>
+
+  <!-- Breadcrumb -->
+  <text class="t" x="240" y="222" text-decoration="underline">Notes</text>
+  <text class="s" x="296" y="222">›</text>
+  <text class="t" x="310" y="222" text-decoration="underline">Kuliah</text>
+  <text class="s" x="356" y="222">›</text>
+  <text class="b" x="370" y="222">Semester 5</text>
+  <text class="s e" x="1280" y="222">4 folders · 5 notes · sorted: pinned, then last edited</text>
+
+  <!-- Folder tiles -->
+  <text class="s" x="240" y="246">FOLDERS</text>
+  <!-- tile 1 -->
+  <rect class="tile" x="240" y="254" width="192" height="96" rx="8"/>
+  <path class="folder" d="M256 272 h16 l5 6 h25 v24 h-46 z"/>
+  <text class="b" x="256" y="324">Basis Data</text>
+  <text class="s" x="256" y="340">2 notes</text>
+  <text class="b" x="408" y="276">⋯</text>
+  <!-- tile 2: drop target -->
+  <rect class="drop" x="452" y="254" width="192" height="96" rx="8"/>
+  <path class="folder" d="M468 272 h16 l5 6 h25 v24 h-46 z"/>
+  <text class="b" x="468" y="324">Jaringan</text>
+  <text class="s" x="468" y="340">3 notes</text>
+  <text class="s" x="548" y="290" style="fill:#222">Drop here</text>
+  <!-- tile 3 -->
+  <rect class="tile" x="664" y="254" width="192" height="96" rx="8"/>
+  <path class="folder" d="M680 272 h16 l5 6 h25 v24 h-46 z"/>
+  <text class="b" x="680" y="324">Kecerdasan Buatan</text>
+  <text class="s" x="680" y="340">Empty</text>
+  <text class="b" x="832" y="276">⋯</text>
+  <!-- tile 4 -->
+  <rect class="tile" x="876" y="254" width="192" height="96" rx="8"/>
+  <path class="folder" d="M892 272 h16 l5 6 h25 v24 h-46 z"/>
+  <text class="b" x="892" y="324">Pemrograman Web</text>
+  <text class="s" x="892" y="340">5 notes</text>
+  <text class="b" x="1044" y="276">⋯</text>
+  <!-- tile 5: new folder -->
+  <rect class="dash" x="1088" y="254" width="192" height="96" rx="8"/>
+  <text class="t c" x="1184" y="300">+ New folder</text>
+  <text class="s c" x="1184" y="318">(level 3 of 3)</text>
+
+  <!-- drag ghost -->
+  <rect x="522" y="306" width="138" height="30" rx="6" fill="#fff" stroke="#222" stroke-dasharray="3 2"/>
+  <text class="s" x="534" y="325" style="fill:#222">✥  Tugas ERD</text>
+
+  <!-- Note tiles -->
+  <text class="s" x="240" y="382">NOTES</text>
+  <!-- note 1 pinned -->
+  <rect class="tile" x="240" y="390" width="245" height="170" rx="8"/>
+  <text class="b" x="256" y="420">Jadwal UAS</text><text class="s" x="458" y="420">📌</text>
+  <rect class="lines" x="256" y="436" width="205" height="7" rx="3"/>
+  <rect class="lines" x="256" y="450" width="180" height="7" rx="3"/>
+  <rect class="lines" x="256" y="464" width="120" height="7" rx="3"/>
+  <text class="s" x="256" y="492">☐ Senin: Basis Data</text>
+  <text class="s" x="256" y="508">☐ Rabu: Jaringan</text>
+  <line class="line" x1="240" y1="522" x2="485" y2="522"/>
+  <text class="s" x="256" y="544">Edited Sep 22</text><text class="b" x="460" y="544">⋯</text>
+  <!-- note 2 keyboard focus -->
+  <rect class="tile" x="505" y="390" width="245" height="170" rx="8"/>
+  <rect class="focus" x="501" y="386" width="253" height="178" rx="10"/>
+  <text class="b" x="521" y="420">Rangkuman Normalisasi</text>
+  <rect class="lines" x="521" y="436" width="205" height="7" rx="3"/>
+  <rect class="lines" x="521" y="450" width="190" height="7" rx="3"/>
+  <rect class="lines" x="521" y="464" width="150" height="7" rx="3"/>
+  <rect class="lines" x="521" y="478" width="170" height="7" rx="3"/>
+  <line class="line" x1="505" y1="522" x2="750" y2="522"/>
+  <text class="s" x="521" y="544">Edited today, 10:42 AM</text><text class="b" x="725" y="544">⋯</text>
+  <!-- note 3 -->
+  <rect class="tile" x="770" y="390" width="245" height="170" rx="8"/>
+  <text class="b" x="786" y="420">Catatan Kuliah Minggu 4</text>
+  <rect class="lines" x="786" y="436" width="200" height="7" rx="3"/>
+  <rect class="lines" x="786" y="450" width="160" height="7" rx="3"/>
+  <rect class="lines" x="786" y="464" width="185" height="7" rx="3"/>
+  <line class="line" x1="770" y1="522" x2="1015" y2="522"/>
+  <text class="s" x="786" y="544">Edited Sep 18</text><text class="b" x="990" y="544">⋯</text>
+  <!-- note 4 being dragged -->
+  <rect class="tile" x="1035" y="390" width="245" height="170" rx="8" stroke-dasharray="4 3"/>
+  <text class="b" x="1051" y="420" style="fill:#aaa">Tugas ERD</text>
+  <rect class="lines" x="1051" y="436" width="190" height="7" rx="3" opacity="0.5"/>
+  <rect class="lines" x="1051" y="450" width="150" height="7" rx="3" opacity="0.5"/>
+  <line class="line" x1="1035" y1="522" x2="1280" y2="522"/>
+  <text class="s" x="1051" y="544" style="fill:#aaa">Edited Sep 12 · dragging</text>
+  <!-- note 5 -->
+  <rect class="tile" x="240" y="580" width="245" height="170" rx="8"/>
+  <text class="b" x="256" y="610">Kisi-kisi UTS</text>
+  <rect class="lines" x="256" y="626" width="200" height="7" rx="3"/>
+  <rect class="lines" x="256" y="640" width="140" height="7" rx="3"/>
+  <line class="line" x1="240" y1="712" x2="485" y2="712"/>
+  <text class="s" x="256" y="734">Edited Sep 2</text><text class="b" x="460" y="734">⋯</text>
+
+  <text class="s" x="240" y="836">↑ ↓ ← → move focus · Enter open · Backspace go to parent folder · Drag a note onto a folder tile or the breadcrumb to move it</text>
+
+  <!-- Callouts -->
+  <g><circle class="call" cx="240" cy="158" r="10"/><text class="callt" x="240" y="162" text-anchor="middle">1</text></g>
+  <g><circle class="call" cx="224" cy="214" r="10"/><text class="callt" x="224" y="218" text-anchor="middle">2</text></g>
+  <g><circle class="call" cx="820" cy="112" r="10"/><text class="callt" x="820" y="116" text-anchor="middle">3</text></g>
+  <g><circle class="call" cx="1184" cy="104" r="10"/><text class="callt" x="1184" y="108" text-anchor="middle">4</text></g>
+  <g><circle class="call" cx="240" cy="256" r="10"/><text class="callt" x="240" y="260" text-anchor="middle">5</text></g>
+  <g><circle class="call" cx="644" cy="256" r="10"/><text class="callt" x="644" y="260" text-anchor="middle">6</text></g>
+  <g><circle class="call" cx="1088" cy="256" r="10"/><text class="callt" x="1088" y="260" text-anchor="middle">7</text></g>
+  <g><circle class="call" cx="240" cy="392" r="10"/><text class="callt" x="240" y="396" text-anchor="middle">8</text></g>
+  <g><circle class="call" cx="754" cy="388" r="10"/><text class="callt" x="754" y="392" text-anchor="middle">9</text></g>
+  <g><circle class="call" cx="1280" cy="392" r="10"/><text class="callt" x="1280" y="396" text-anchor="middle">10</text></g>
+
+  <!-- Notes -->
+  <text class="h2" x="20" y="892">Catatan</text>
+  <text class="note" x="20" y="916">1  Mode tampilan: Browse folders (default), All notes (catatan dari semua folder, tanpa petak folder), Trash.     2  Breadcrumb: klik untuk naik; juga target drop.</text>
+  <text class="note" x="20" y="936">3  Cari judul + isi (Ctrl+F): cakupan folder ini + subfolder, atau semua; hasil menggantikan petak (lihat 05-D).     4  + Folder / + Note (Ctrl+N) di folder aktif.</text>
+  <text class="note" x="20" y="956">5  Petak folder: nama + jumlah isi; klik/Enter = buka; ⋯ = ganti nama / hapus; drag petak folder = urut ulang.     6  Petak folder saat jadi target drop.</text>
+  <text class="note" x="20" y="976">7  Petak “+ New folder”; disembunyikan di tingkat 3 (di sini Semester 5 = tingkat 2, subfolder baru = tingkat 3; label “level 3 of 3”).     8  Catatan disematkan tampil pertama (📌).</text>
+  <text class="note" x="20" y="996">9  Ring fokus keyboard pada petak.     10  Catatan sedang di-drag ke petak folder; alternatif menu ⋯ “Move to…” (lihat 05-E). Klik petak catatan = buka editor (03b).</text>
+</svg>

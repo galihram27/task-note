@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="860" viewBox="0 0 1320 860" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif">
+  <style>
+    .bg{fill:#fafafa}
+    .panel{fill:#fff;stroke:#222;stroke-width:1.5}
+    .pane{fill:#fff;stroke:#999}
+    .box{fill:#ececec;stroke:#aaa}
+    .dark{fill:#bdbdbd;stroke:#666}
+    .fill{fill:#555;stroke:#555}
+    .dlg{fill:#fff;stroke:#222;stroke-width:1.5}
+    .overlay{fill:#dcdcdc}
+    .hl{fill:#bdbdbd}
+    .line{stroke:#ccc}
+    .dash{fill:none;stroke:#888;stroke-dasharray:5 4}
+    .h1{font-size:20px;font-weight:700;fill:#222}
+    .h2{font-size:15px;font-weight:700;fill:#222}
+    .cap{font-size:13px;font-weight:700;fill:#9B111E}
+    .t{font-size:13px;fill:#333}
+    .b{font-size:13px;font-weight:700;fill:#222}
+    .s{font-size:11px;fill:#777}
+    .c{text-anchor:middle}
+    .mono{font-family:Consolas, monospace;font-size:12px;fill:#333}
+    .monob{font-family:Consolas, monospace;font-size:12px;font-weight:700;fill:#222}
+  </style>
+  <rect class="bg" width="1320" height="860"/>
+  <text class="h1" x="20" y="34">05 · Dialog &amp; status</text>
+  <text class="s" x="20" y="52">Wireframe low-fi · potongan UI untuk kondisi khusus</text>
+
+  <!-- A: delete folder dialog -->
+  <g transform="translate(20,70)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">A · Dialog hapus folder</text>
+    <rect class="overlay" x="1" y="40" width="398" height="329"/>
+    <rect class="dlg" x="30" y="66" width="340" height="274" rx="8"/>
+    <text class="h2" x="50" y="100">Delete folder “Kuliah”?</text>
+    <text class="s" x="50" y="122">This folder contains 2 subfolders and 8 notes.</text>
+    <text class="t" x="50" y="152">What should happen to its notes?</text>
+    <circle cx="58" cy="180" r="7" fill="#fff" stroke="#222"/><circle cx="58" cy="180" r="3.5" fill="#222"/>
+    <text class="t" x="74" y="184">Move them to “Unfiled”</text>
+    <circle cx="58" cy="208" r="7" fill="#fff" stroke="#222"/>
+    <text class="t" x="74" y="212">Move them to Trash (30 days)</text>
+    <text class="s" x="50" y="248">Subfolders are deleted too. This can’t be undone.</text>
+    <rect class="pane" x="176" y="290" width="70" height="32" rx="6"/><text class="t" x="193" y="311">Cancel</text>
+    <rect class="fill" x="254" y="290" width="100" height="32" rx="6"/><text class="t" x="262" y="311" style="fill:#fff" font-weight="700">Delete folder</text>
+  </g>
+
+  <!-- B: import confirmation -->
+  <g transform="translate(460,70)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">B · Konfirmasi impor</text>
+    <rect class="overlay" x="1" y="40" width="398" height="329"/>
+    <rect class="dlg" x="20" y="56" width="360" height="300" rx="8"/>
+    <text class="h2" x="40" y="88">Replace your data with this file?</text>
+    <text class="s" x="40" y="108">backup-2026-09-20.json · exported Sep 20, 2026, 9:05 PM</text>
+    <text class="s" x="40" y="138">DATA</text><text class="s" x="230" y="138">IN FILE</text><text class="s" x="300" y="138">CURRENT</text>
+    <line class="line" x1="40" y1="146" x2="360" y2="146"/>
+    <text class="t" x="40" y="168">Tasks &amp; subtasks</text><text class="t" x="230" y="168">18</text><text class="t" x="300" y="168">20</text>
+    <text class="t" x="40" y="190">Check history</text><text class="t" x="230" y="190">340</text><text class="t" x="300" y="190">352</text>
+    <text class="t" x="40" y="212">Time entries</text><text class="t" x="230" y="212">96</text><text class="t" x="300" y="212">101</text>
+    <text class="t" x="40" y="234">Notes</text><text class="t" x="230" y="234">25</text><text class="t" x="300" y="234">27</text>
+    <text class="t" x="40" y="256">Folders</text><text class="t" x="230" y="256">6</text><text class="t" x="300" y="256">6</text>
+    <text class="s" x="40" y="282">⚠ All current data will be replaced.</text>
+    <text class="s" x="40" y="297">A safety backup is created first.</text>
+    <rect class="pane" x="196" y="314" width="70" height="30" rx="6"/><text class="t" x="213" y="334">Cancel</text>
+    <rect class="fill" x="274" y="314" width="90" height="30" rx="6"/><text class="t" x="281" y="334" style="fill:#fff" font-weight="700">Replace data</text>
+  </g>
+
+  <!-- C: empty history -->
+  <g transform="translate(900,70)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">C · Histori: tanggal tanpa data</text>
+    <text class="h2" x="24" y="68">Tuesday, September 1, 2026</text>
+    <text class="s" x="24" y="90">0 items done · 0m logged</text>
+    <rect class="dash" x="24" y="110" width="352" height="230" rx="8"/>
+    <circle class="box" cx="200" cy="180" r="28"/>
+    <text class="h1 c" x="200" y="188" style="fill:#999">∅</text>
+    <text class="b c" x="200" y="240">No activity recorded</text>
+    <text class="s c" x="200" y="260">for this date.</text>
+    <text class="s c" x="200" y="300">Pick a date marked with a dot,</text>
+    <text class="s c" x="200" y="316">or go back to “Today”.</text>
+  </g>
+
+  <!-- D: search results -->
+  <g transform="translate(20,470)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">D · Hasil pencarian (menggantikan petak)</text>
+    <rect class="pane" x="16" y="42" width="368" height="32" rx="6"/>
+    <text class="t" x="28" y="63">⌕  normal</text><text class="t" x="364" y="63">✕</text>
+    <rect class="dark" x="16" y="82" width="110" height="24" rx="5"/><text class="s" x="40" y="98" style="fill:#222">This folder</text>
+    <rect class="pane" x="132" y="82" width="110" height="24" rx="5"/><text class="s" x="152" y="98">All notes</text>
+    <text class="s" x="16" y="130">3 results for “normal” in Semester 5 (+ subfolders)</text>
+
+    <rect class="pane" x="16" y="140" width="368" height="64" rx="6"/>
+    <rect class="hl" x="96" y="151" width="43" height="15"/>
+    <text class="monob" x="30" y="162">Rangkuman Normalisasi</text>
+    <rect class="hl" x="83" y="175" width="43" height="15"/>
+    <text class="mono" x="30" y="186">…bentuk normal pertama (1NF)…</text>
+    <text class="s" x="300" y="162">Semester 5</text>
+
+    <rect class="pane" x="16" y="212" width="368" height="64" rx="6"/>
+    <text class="monob" x="30" y="234">Catatan Kuliah Minggu 4</text>
+    <rect class="hl" x="122" y="247" width="43" height="15"/>
+    <text class="mono" x="30" y="258">…tabel sudah normal hingga 3NF…</text>
+    <text class="s" x="300" y="234">Semester 5</text>
+
+    <rect class="pane" x="16" y="284" width="368" height="64" rx="6"/>
+    <text class="monob" x="30" y="306">Tugas ERD</text>
+    <rect class="hl" x="36" y="319" width="43" height="15"/>
+    <text class="mono" x="30" y="330">…Normalisasi relasi mahasiswa…</text>
+    <text class="s" x="300" y="306">Basis Data</text>
+  </g>
+
+  <!-- E: note menu / move to -->
+  <g transform="translate(460,470)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">E · Menu catatan &amp; “Move to…”</text>
+    <rect class="pane" x="16" y="48" width="220" height="64" rx="6"/>
+    <text class="b" x="30" y="72">Tugas ERD</text><text class="b" x="214" y="72">⋯</text>
+    <rect class="box" x="30" y="82" width="170" height="7" rx="3"/>
+    <text class="s" x="30" y="104">Edited Sep 12</text>
+
+    <rect class="dlg" x="110" y="96" width="140" height="112" rx="6"/>
+    <text class="t" x="124" y="122">📌 Pin</text>
+    <rect class="box" x="114" y="132" width="132" height="26" rx="4"/>
+    <text class="b" x="124" y="150">Move to…   ›</text>
+    <line class="line" x1="114" y1="168" x2="246" y2="168"/>
+    <text class="t" x="124" y="192">Delete (to Trash)</text>
+
+    <rect class="dlg" x="250" y="126" width="138" height="176" rx="6"/>
+    <text class="t" x="262" y="150">□ Unfiled</text>
+    <text class="t" x="262" y="174">Kuliah</text>
+    <text class="t" x="274" y="198">Semester 5</text>
+    <text class="b" x="286" y="222">Basis Data ✓</text>
+    <text class="t" x="286" y="246">Jaringan</text>
+    <text class="t" x="262" y="270">Pribadi</text>
+    <text class="t" x="262" y="294">Proyek</text>
+    <text class="s" x="16" y="340">✓ = folder saat ini. Hasil sama dengan drag &amp; drop ke petak folder.</text>
+  </g>
+
+  <!-- F: trash -->
+  <g transform="translate(900,470)">
+    <rect class="panel" width="400" height="370" rx="8"/>
+    <text class="cap" x="16" y="26">F · Sampah</text>
+    <text class="b" x="16" y="66">Trash · 2 notes</text>
+    <rect class="pane" x="250" y="48" width="134" height="26" rx="5"/><text class="s" x="266" y="65" style="fill:#333">Empty trash</text>
+    <text class="s" x="16" y="94">Notes are permanently deleted after 30 days.</text>
+    <rect class="pane" x="16" y="106" width="368" height="56" rx="6"/>
+    <text class="b" x="30" y="128">Draft lama</text>
+    <text class="s" x="30" y="148">Deleted Sep 12 · 17 days left</text>
+    <rect class="pane" x="16" y="170" width="368" height="56" rx="6"/>
+    <text class="b" x="30" y="192">Ide aplikasi</text>
+    <text class="s" x="30" y="212">Deleted Sep 24 · 29 days left</text>
+    <rect class="dash" x="16" y="244" width="368" height="100" rx="8"/>
+    <text class="s" x="30" y="264">BANNER DI ATAS EDITOR</text>
+    <text class="t" x="30" y="286">This note is in the Trash (read-only).</text>
+    <rect class="fill" x="30" y="300" width="90" height="30" rx="6"/><text class="t" x="46" y="320" style="fill:#fff" font-weight="700">Restore</text>
+    <rect class="pane" x="128" y="300" width="130" height="30" rx="6"/><text class="t" x="142" y="320">Delete forever</text>
+  </g>
+</svg>

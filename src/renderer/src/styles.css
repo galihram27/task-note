@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Token tema TaskNote. Setiap token otomatis menjadi utility Tailwind,
+   mis. bg-bg, bg-panel, border-line, text-accent-text. */
+@theme {
+  --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #080808;
+  --color-panel: #121212;
+  --color-line: #2a2a2a;
+  /* Aksen untuk isian (tombol, segmen progres). Jangan dipakai sebagai warna teks. */
+  --color-accent: #9b111e;
+  /* Aksen untuk teks kecil dan ring fokus: kontras cukup di atas latar gelap. */
+  --color-accent-text: #d9545c;
+  --color-fg: #ededed;
+  --color-fg-muted: #9e9e9e;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+  }
+
+  /* Fokus keyboard harus selalu terlihat. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 2px;
+  }
+}
